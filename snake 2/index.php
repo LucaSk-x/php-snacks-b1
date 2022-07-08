@@ -8,9 +8,9 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato -->
     $userMail = array_key_exists('mail', $_GET) ? trim($_GET['mail']) : '';
     $userAge = array_key_exists('age', $_GET) ? trim($_GET['age']) : '';
 
-    $nameOk = false;
+/*     $nameOk = false;
     $mailOk = false;
-    $ageOk = false;
+    $ageOk = false; */
 
     if(strlen($userName) >= 3) {
         $nameOk = true;
@@ -23,9 +23,6 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato -->
     if (is_numeric($userAge)) {
         $ageOk = true;
     };
-
-    var_dump($nameOk, $mailOk, $ageOk);
-    var_dump(isset($nameOk, $mailOk, $ageOk));
     ?>
 
 <!DOCTYPE html>
